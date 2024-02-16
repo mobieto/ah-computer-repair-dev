@@ -34,12 +34,12 @@ export default function Navbar() {
     return (
         <>
             {/* main navbar */}
-            <nav className={"fixed min-w-[21rem] w-full bg-gray-200 dark:bg-gray-900 [transition:height_.5s] z-50 pointer-events-none " + navBgVisState}>
-                <div className="max-w-screen-xl flex items-center justify-between p-5">
+            <nav className={"fixed min-w-[21rem] w-full bg-gray-200 dark:bg-[#0e1014]  [transition:height_.5s] z-50 pointer-events-none select-none " + navBgVisState}>
+                <div className="flex items-center justify-between p-5">
                     <Link to="home-section"
                     className="flex items-center space-x-4 rtl:space-x-reverse pointer-events-auto cursor-pointer">
                         <img src={Logo} className="h-8" alt="Logo" />
-                        <span className="text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white font-dosis dark:text-shadow-[0_1px_2px_#000000]">AH Computer Repair</span>
+                        <span className="text-2xl font-normal whitespace-nowrap text-gray-950 dark:text-white font-dosis">AH Computer Repair</span>
                     </Link>
 
                     <button type="button" className="flex flex-col items-center justify-center w-8 h-8 md:hidden pointer-events-auto"
@@ -53,7 +53,7 @@ export default function Navbar() {
                         <div className={`${genericHamburgerLine} ${navMenuState ? "-rotate-45 -translate-y-[10px]" : ""}`}></div>
                     </button>
 
-                    <div className="hidden w-auto md:block pointer-events-auto">
+                    <div className="hidden w-auto mr-5 md:block pointer-events-auto">
                         <ul className="flex flex-row rounded-lg space-x-8 rtl:space-x-reverse">
                             {navLinks.map((item) => {
                                 return (
@@ -71,7 +71,7 @@ export default function Navbar() {
             </nav>
             
             {/* mobile navbar */}
-            <nav className={"fixed h-full w-48 right-0 bg-white dark:bg-gray-900 transition-transform duration-[.4s] z-40 " + mobileNavDisplay}>
+            <nav className={"fixed h-full w-48 right-0 bg-gray-200 dark:bg-[#0e1014] md:translate-x-[12rem] transition-transform duration-[.4s] z-40 select-none " + mobileNavDisplay}>
                 <ul className="flex flex-col justify-between items-center gap-2 mt-[4.5rem]">
                     {navLinks.map((item) => {
                         return (
