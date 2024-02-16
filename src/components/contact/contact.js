@@ -57,11 +57,11 @@ export default function Contact() {
 
     return (
         <section id="contact-section" className="flex flex-col justify-center align-middle bg-white dark:bg-[#171a20] h-auto">
-            <span className="w-[90%] ml-[5%] mt-28 text-4xl text-center text-white font-poppins font-bold">
+            <span className="w-[90%] ml-[5%] mt-28 text-4xl text-center text-gray-900 dark:text-white font-poppins font-bold">
             Contact Us
             </span>
 
-            <span className="w-[80%] ml-[10%] mt-10 text-base text-center text-white font-poppins font-light">
+            <span className="w-[80%] ml-[10%] mt-10 text-base text-center text-gray-900 dark:text-white font-poppins font-light">
             You can contact us at:<br/><br/>
                 <ul>
                     <li>07123 456789</li>
@@ -83,10 +83,10 @@ export default function Contact() {
                 <label className="mt-4 font-poppins text-gray-900 dark:text-white">Message</label>
                 <textarea name="message" className="bg-gray-300 dark:bg-gray-700 h-40"/>
                 <span className={`mt-1 text-xs text-red-500 font-poppins italic ${messageErrorState ? "block" : "hidden"}`}>Enter a message</span>
-                <input type="submit" value="Send" className="bg-blue-600 hover:bg-blue-800 text-white rounded-2xl mt-10 mb-28 w-40 h-10 cursor-pointer mx-auto font-poppins text-xl [transition:background-color_.1s]"/>
+                <input type="submit" value="Send" className="bg-blue-600 hover:bg-blue-800 text-white rounded-2xl mt-10 mb-8 w-40 h-10 cursor-pointer mx-auto font-poppins text-xl [transition:background-color_.1s]"/>
             </form>
             <span className={`text-red-500 font-poppins mx-auto mt-3 mb-5 ${(emailCooldownState !== 0) ? "block" : "hidden"}`}>Please wait {Math.floor(emailCooldownState / 1000)} second{} before sending again</span>
-            <span className={`text-green-500 font-poppins mx-auto mt-3 mb-5 ${sendSuccessState ? "block" : "hidden"}`}>Message successfully sent!</span>
+            <span className={`text-green-500 font-poppins mx-auto mt-3 mb-5 ${sendSuccessState ? "block" : "hidden"}`}>Message sent!</span>
         </section>
     )
 }

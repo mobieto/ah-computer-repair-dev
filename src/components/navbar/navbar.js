@@ -71,7 +71,7 @@ export default function Navbar() {
             </nav>
             
             {/* mobile navbar */}
-            <nav className={"fixed h-full w-48 right-0 bg-white dark:bg-[#0e1014] md:translate-x-[12rem] transition-transform duration-[.4s] z-40 select-none " + mobileNavDisplay}>
+            <nav className={"fixed h-full w-48 right-0 bg-gray-200 dark:bg-[#0e1014] md:translate-x-[12rem] transition-transform duration-[.4s] z-40 select-none " + mobileNavDisplay}>
                 <ul className="flex flex-col justify-between items-center gap-2 mt-[4.5rem]">
                     {navLinks.map((item) => {
                         return (
