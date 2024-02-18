@@ -68,8 +68,6 @@ export default function Contact() {
                     <li>test@email.com</li>
                     <br/>
                     <li>Or use the form below.</li>
-                    <br/>
-                    <li>We will get back to you as soon as possible!</li>
                 </ul>
             </span>
 

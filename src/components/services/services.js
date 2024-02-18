@@ -28,7 +28,7 @@ export default function Services() {
             Our experts deliver swift and reliable computer repair services, covering both hardware and software issues. Trust us for efficient solutions to keep your technology running smoothly.
             </span>
 
-            <div className="flex flex-row flex-wrap mt-14 justify-center gap-10">
+            <div className="flex flex-row max-w-[90%] ml-[5%] flex-wrap mt-14 justify-center gap-10">
                 <Fade cascade={true} damping={.2} triggerOnce={true}>
                     {
                         cards.map((card) => {
@@ -44,7 +44,7 @@ export default function Services() {
                 </Fade>
             </div>
 
-            <span className="mt-[2rem] mb-[1.5rem] w-[90%] ml-[5%] md:ml-[20%] md:w-[60%] font-poppins font-light text-sm text-center text-gray-900 dark:text-white">
+            <span className="mt-[3rem] mb-[1.5rem] w-[90%] ml-[5%] md:ml-[20%] md:w-[60%] font-poppins font-light text-sm text-center text-gray-900 dark:text-white">
                 We can't fit everything here, but if you'd like to know more, <Link to="contact-section" className="text-blue-500 underline cursor-pointer">get in touch.</Link>
             </span>
         </section>
