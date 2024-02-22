@@ -1,11 +1,17 @@
 import React from 'react';
+import { ReactTyped } from 'react-typed';
 import { Link } from 'react-scroll';
 
 export default function Hero() {
     return (
         <section id="home-section" className={`flex flex-col justify-center items-center w-full h-[100vh] bg-hero bg-cover bg-center bg-no-repeat`}>
             <span className="w-[90%] text-center text-white text-5xl font-poppins font-semibold">
-                Fast and Affordable Computer Repairs
+                <ReactTyped
+                    strings={[
+                    "Fast and Affordable Computer Repairs"
+                    ]}
+                    typeSpeed={50}
+                />
                 <br/>
                 <span className="inline-block mt-5 w-full text-center text-white text-lg leading-8 font-poppins font-extralight">
                     At AH Computer Repair, we pride ourselves on efficient solutions to your computer problems.

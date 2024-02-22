@@ -15,9 +15,9 @@ export default function Navbar() {
         {name: "Contact", to: "contact-section"},
     ]
 
-    const genericHamburgerLine = "h-[2px] w-full my-1 rounded-full bg-gray-900 dark:bg-white transition ease transform duration-300";
-    const navDefaultLinkStyle = "block p-1 font-comfortaa text-gray-900 rounded hover:text-blue-600 dark:text-white dark:text-shadow-[0_1px_2px_#000000] cursor-pointer [&.active]:text-blue-600";
-    const navMobileLinkStyle = "block py-2 font-comfortaa w-full text-center hover:bg-gray-400 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded cursor-pointer [&.active]:bg-blue-600";
+    const genericHamburgerLine = "h-[2px] w-full my-1 bg-gray-900 dark:bg-white transition ease transform duration-300";
+    const navDefaultLinkStyle = "block p-1 font-comfortaa text-gray-900 hover:text-blue-600 dark:text-white dark:text-shadow-[0_1px_2px_#000000] cursor-pointer [&.active]:text-blue-600";
+    const navMobileLinkStyle = "block py-2 rounded-lg font-comfortaa w-full text-center text-gray-900 dark:text-white cursor-pointer [&.active]:bg-blue-600";
 
     function onScroll() {
         window.scrollY > 110 ? setNavBgVisState("h-[4.5rem]") : setNavBgVisState("h-[0rem]");
@@ -34,7 +34,7 @@ export default function Navbar() {
     return (
         <>
             {/* main navbar */}
-            <nav className={"fixed min-w-[21rem] w-full bg-gray-200 dark:bg-[#0e1014]  [transition:height_.5s] z-50 pointer-events-none select-none " + navBgVisState}>
+            <nav className={"fixed min-w-[21rem] w-full bg-gray-200 dark:bg-[#0e1014] [transition:height_.5s] z-50 pointer-events-none select-none " + navBgVisState}>
                 <div className="flex items-center justify-between p-5">
                     <Link to="home-section"
                     className="flex items-center space-x-4 rtl:space-x-reverse pointer-events-auto cursor-pointer">
@@ -84,7 +84,7 @@ export default function Navbar() {
                         )
                     })}
 
-                    <span className="absolute bottom-1 w-full text-xs text-center text-gray-900 dark:text-white opacity-80 dark:opacity-40">© 2024 AH Computer Repair</span>
+                    <span className="absolute bottom-1 w-full font-poppins font-extralight text-xs text-center text-gray-900 dark:text-white opacity-60 dark:opacity-30">© 2024 AH Computer Repair</span>
                 </ul>
             </nav>
 
