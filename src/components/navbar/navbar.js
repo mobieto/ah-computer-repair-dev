@@ -9,10 +9,10 @@ export default function Navbar() {
 
     const navLinks = [
         {name: "Home", to: "home-section"},
-        {name: "About", to: "about-section"},
         {name: "Services", to: "services-section"},
         {name: "Pricing", to: "pricing-section"},
         {name: "Contact", to: "contact-section"},
+        {name: "About", to: "about-section"},
     ]
 
     const genericHamburgerLine = "h-[2px] w-full my-1 bg-gray-900 dark:bg-white transition ease transform duration-300";
@@ -71,7 +71,7 @@ export default function Navbar() {
             </nav>
             
             {/* mobile navbar */}
-            <nav className={"fixed h-full w-48 right-0 bg-gray-200 dark:bg-[#0e1014] md:translate-x-[12rem] transition-transform duration-[.4s] z-40 select-none " + mobileNavDisplay}>
+            <nav className={"fixed h-full w-48 right-0 from-gray-200 to-gray-400 from-15% dark:from-[#0e1014] dark:to-[#1b1e24] bg-gradient-to-b md:translate-x-[12rem] transition-transform duration-[.4s] z-40 select-none " + mobileNavDisplay}>
                 <ul className="flex flex-col justify-between items-center gap-2 mt-[4.5rem]">
                     {navLinks.map((item) => {
                         return (
@@ -84,7 +84,7 @@ export default function Navbar() {
                         )
                     })}
 
-                    <span className="absolute bottom-1 w-full font-poppins font-extralight text-xs text-center text-gray-900 dark:text-white opacity-60 dark:opacity-30">© 2024 AH Computer Repair</span>
+                    <span className="absolute bottom-1 w-full font-poppins font-extralight text-xs text-center text-gray-900 dark:text-white opacity-80 dark:opacity-20">© 2024 AH Computer Repair</span>
                 </ul>
             </nav>
 

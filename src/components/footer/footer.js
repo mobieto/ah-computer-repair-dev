@@ -14,8 +14,14 @@ import YoutubeImageBlack from '../../assets/youtube-black.png';
 
 export default function Footer() {
     return (
-        <section id="footer-section" className="flex flex-col align-middle justify-center w-full from-gray-200 to-gray-100 bg-gradient-to-br dark:from-[#0e1014] dark:to-[#181c22] dark:bg-gradient-to-br">
-            <div className="flex flex-row flex-wrap gap-[10%] mt-16 justify-center font-poppins">
+        <section id="footer-section" className="flex flex-col align-middle justify-center w-full from-gray-400 to-gray-100 bg-gradient-to-br dark:from-[#0e1014] dark:to-[#242931] dark:bg-gradient-to-br">
+            <div className="flex flex-row flex-wrap gap-x-[14%] gap-y-12 mt-16 justify-center font-poppins">
+                <ul>
+                    <li className="font-bold text-xl">About</li>
+                    <li className="opacity-70 font-extralight mt-4 max-w-64">
+                        AH Computer Repair is a leading computer repair service based in Peterborough, UK.
+                    </li>
+                </ul>
                 <ul>
                     <li className="font-bold text-xl">Contact</li>
                     <li className="opacity-70 font-extralight mt-4 flex flex-row gap-2">
@@ -49,9 +55,9 @@ export default function Footer() {
                 </ul>
             </div>
             <hr className="w-[80%] mx-auto mt-12 border-black bg-black dark:bg-white dark:border-white opacity-15"/>
-            <div className="flex flex-row mt-8 gap-[30%] justify-center">
+            <div className="flex flex-row flex-wrap mt-8 gap-x-[40%] justify-center">
                 <span className="text-sm m-4 text-center text-gray-900 dark:text-white font-poppins dark:opacity-35 font-extralight">© 2024 AH Computer Repair All Rights Reserved</span>
-                <span className="text-sm m-4 text-center text-gray-900 dark:text-white font-poppins dark:opacity-35 font-extralight">Made by Mobin H - @mobiuous</span>
+                <span className="text-sm m-4 text-center text-gray-900 dark:text-white font-poppins dark:opacity-35 font-extralight">Website made by Mobin - @mobiuous</span>
             </div>
         </section>
     )

@@ -11,10 +11,10 @@ export default function App() {
     <div className="App">
       <Navbar/>
       <Hero/>
-      <About/>
       <Services/>
       <Pricing/>
       <Contact/>
+      <About/>
       <Footer/>
     </div>
   );

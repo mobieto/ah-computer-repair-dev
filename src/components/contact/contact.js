@@ -56,7 +56,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact-section" className="flex flex-col justify-center align-middle bg-white dark:to-[#282d35] dark:from-[#171a20] dark:bg-gradient-to-b">
+        <section id="contact-section" className="flex flex-col justify-center align-middle bg-white dark:bg-[#171a20]">
             <span className="w-[90%] ml-[5%] mt-36 text-5xl text-center text-gray-900 dark:text-white font-poppins font-bold">
             Contact Us
             </span>
@@ -85,6 +85,8 @@ export default function Contact() {
             </form>
             <span className={`text-red-500 font-poppins mx-auto mt-3 mb-5 ${(emailCooldownState !== 0) ? "block" : "hidden"}`}>Please wait {Math.floor(emailCooldownState / 1000)} second{} before sending again</span>
             <span className={`text-green-500 font-poppins mx-auto mt-3 mb-5 ${sendSuccessState ? "block" : "hidden"}`}>Message sent!</span>
+
+            <hr className="w-[90%] mx-auto mt-8 border-black bg-black dark:bg-white dark:border-white opacity-15"/>
         </section>
     )
 }

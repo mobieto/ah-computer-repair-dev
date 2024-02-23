@@ -30,13 +30,21 @@ export default function Services() {
     ]
 
     return (
-        <section id="services-section" className="flex flex-col align-middle w-full overflow-y-auto bg-white dark:bg-[#171a20]">
-            <span className="mt-36 font-poppins font-bold text-5xl text-center text-gray-900 dark:text-white">Our Services</span>
-            <span className="mt-8 w-[90%] ml-[5%] md:ml-[20%] md:w-[60%] font-poppins font-light text-base text-center text-gray-900 dark:text-white">
+        <section id="services-section" className="flex flex-col items-center w-full overflow-y-auto to-white from-gray-300 bg-gradient-to-b dark:to-[#171a20] dark:from-[#323741] dark:bg-gradient-to-b">
+            <span className="w-[90%] mt-24 text-4xl text-center text-gray-900 dark:text-white font-poppins font-bold">
+            Your trusted tech partner in Peterborough.
+            </span>
+            <span className="w-[80%] mt-14 text-lg text-center text-gray-900 dark:text-white font-poppins font-light">
+                AH Computer Repair is your ideal local destination for computer repair services. We understand the frustrations that come with tech problems, which is why we are dedicated
+                to providing you with prompt and professional solutions to get you back up and running in no time.
+            </span>
+            <hr className="w-[60%] mt-20 mx-auto border-black bg-black dark:bg-white dark:border-white opacity-15"/>
+            <span className="mt-20 mx-auto font-poppins font-bold text-5xl text-center text-gray-900 dark:text-white">Our Services</span>
+            <span className="mt-8 w-[90%] mx-auto font-poppins font-light text-base text-center text-gray-900 dark:text-white">
             Our experts deliver swift and reliable computer repair services, covering both hardware and software issues. Trust us for efficient solutions to keep your technology running smoothly.
             </span>
 
-            <div className="flex flex-row max-w-[90%] ml-[5%] flex-wrap mt-14 justify-center gap-10">
+            <div className="flex flex-row max-w-[90%] mx-auto flex-wrap mt-14 justify-center gap-10">
                 <Fade cascade={true} damping={.2} triggerOnce={true}>
                     {
                         cards.map((card) => {
@@ -52,7 +60,7 @@ export default function Services() {
                 </Fade>
             </div>
 
-            <span className="mt-[3rem] mb-[1.5rem] w-[90%] ml-[5%] md:ml-[20%] md:w-[60%] font-poppins font-light text-sm text-center text-gray-900 dark:text-white">
+            <span className="mt-[3rem] mb-[1.5rem] w-[90%] mx-auto font-poppins font-light text-sm text-center text-gray-900 dark:text-white">
                 We can't fit everything here, but if you'd like to know more, <Link to="contact-section" className="text-blue-500 underline cursor-pointer">get in touch.</Link>
             </span>
             <hr className="w-[90%] mx-auto mt-8 border-black bg-black dark:bg-white dark:border-white opacity-15"/>
