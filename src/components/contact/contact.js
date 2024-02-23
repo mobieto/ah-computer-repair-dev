@@ -64,8 +64,8 @@ export default function Contact() {
             <span className="w-[80%] ml-[10%] mt-16 text-base text-center text-gray-900 dark:text-white font-poppins font-light">
             You can contact us at:<br/><br/>
                 <ul>
-                    <li>07123 456789</li>
-                    <li>test@email.com</li>
+                    <li>+44 7450 213618</li>
+                    <li>goldenmaill@yahoo.com</li>
                     <br/>
                     <li>Or use the form below.</li>
                 </ul>

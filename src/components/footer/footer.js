@@ -27,12 +27,12 @@ export default function Footer() {
                     <li className="opacity-70 font-extralight mt-4 flex flex-row gap-2">
                         <img src={PhoneImage} alt="phone" className="w-5 h-5 hidden dark:block opacity-80"/>
                         <img src={PhoneImageBlack} alt="phone" className="w-5 h-5 block dark:hidden opacity-80"/>
-                        <span>+44 000000000</span>
+                        <span>+44 7450 213618</span>
                     </li>
                     <li className="opacity-70 font-extralight mt-2 flex flex-row gap-2">
                         <img src={EmailImage} alt="email" className="w-5 h-5 hidden dark:block opacity-80"/>
                         <img src={EmailImageBlack} alt="email" className="w-5 h-5 block dark:hidden opacity-80"/>
-                        <span>test@email.com</span>
+                        <span>goldenmaill@yahoo.com</span>
                     </li>
                 </ul>
                 <ul>
@@ -40,7 +40,7 @@ export default function Footer() {
                     <li className="opacity-70 font-extralight mt-4 flex flex-row gap-2">
                         <img src={InstagramImage} alt="instagram" className="w-5 h-5 hidden dark:block opacity-80"/>
                         <img src={InstagramImageBlack} alt="instagram" className="w-5 h-5 block dark:hidden opacity-80"/>
-                        <a href="#" className="hover:underline">Instagram</a>
+                        <a href="https://www.instagram.com/amin.pc.technician/" target="_blank" className="hover:underline">Instagram</a>
                     </li>
                     <li className="opacity-70 font-extralight mt-2 flex flex-row gap-2">
                         <img src={FacebookImage} alt="email" className="w-5 h-5 hidden dark:block opacity-80"/>
